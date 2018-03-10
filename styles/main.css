@@ -181,25 +181,20 @@ div{
     background-color: yellow;
 }
 .containerp5 nav:first-child,.containerp5 nav:last-child{
-    transition-property: margin-top,margin-right,margin-bottom,margin-left,border-radius;
+    transition-property: margin,border-radius;
     transition-duration: 1s;
-    transition-delay: 3s,3s,3s,3s,4s;
+    transition-delay: 3s,4s;
 }
 .containerp5:hover nav:nth-child(2){
     background-color: blue;
 }
-.containerp5:hover nav:first-child{
-    margin-top: 20px;
-    margin-right: 20px;
+.containerp5:hover nav:first-child,.containerp5:hover nav:last-child{
+    margin: 20px;
 }
 .containerp5 nav:nth-child(2){
     transition-property: border-radius,background-color;
     transition-duration: 1s;
     transition-delay: 5s,6s;
-}
-.containerp5:hover nav:last-child{
-    margin-bottom: 20px;
-    margin-left: 20px;
 }
 /* pagina 6 */
 .containerp6{
