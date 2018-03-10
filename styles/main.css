@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+/* Maquetacion menu */
+
+@import url('https://fonts.googleapis.com/css?family=Rozha+One');
+
+.containermenu{
+    background-color: #00B1CF;
+}
+nav ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 588px;
+    height: 52px;
+    list-style: none;
+}
+nav ul li{
+    text-align: center;
+    line-height: 48px;
+    display: inline-block;
+    transition: 800ms;
+}
+nav ul li:hover{
+    background-color: #2E6670;
+    border-bottom: solid 5px white;
+    box-sizing: border-box;
+}
+nav ul li a{
+    color: white;
+    font-family: 'Rozha One', serif;
+    padding: 15px 21px;
+    text-decoration: none;
+}
+.active{
+    background-color: #2E6670;
+    border-bottom: solid 5px white;
+    box-sizing: border-box;
+}
+/* posiciones */
+div,div nav{
+position: absolute;
+}
+.containerp4 nav:first-child,.containerp6 nav:first-child{
+    top:0;
+    left:0;
+}
+.containerp5 nav:first-child,.containerp6 nav:nth-child(2){
+    top:0;
+    right:0;
+}
+.containerp4 nav:last-child,.containerp6 nav:nth-child(3){
+    right:0;
+    bottom:0;
+}
+.containerp5 nav:last-child,.containerp6 nav:nth-child(4){
+    left:0;
+    bottom:0;
+}
+div,.containerp3 nav,.containerp6 nav:last-child,.containerp5 nav:nth-child(2),.containerp6{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+/* border radius */
+.containerp3:hover nav,.containerp4:hover nav,.containerp5:hover nav,.containerp6:hover nav{
+    border-radius: 50%;
+}
+/* altura y anchura */
+div{
+    width: 200px;
+    height: 220px;
+}
+/* Page inicio */
+.containerpindex{
+    background-color: red;
+    transition: 1s;
+}
+.containerpindex:hover,.containerp2:hover,.containerp3:hover{
+    width: 300px;
+    height: 300px;
+}
+.containerpindex:hover{
+    background-color: purple;
+}
+/* pagina 2 */
+.containerp2{
+    background-color: blue;
+    transition-property: width,height,background-color,border;
+    transition-duration: 1s;
+    transition-delay: 0s,1s,1s,2s; 
+}
+.containerp2:hover{
+    border: solid 5px #D4C11F;
+    background-color: #2E6670;
+    box-sizing: border-box;
+}
+/* pagina 3 */
+.containerp3{
+    background-color: green;
+    transition-property:width,height,background-color,;
+    transition-duration: 1s;
+    transition-delay: 0s,0s,1s,2s;
+}
+.containerp3:hover{
+    background-color: #FF5500;
+}
+.containerp3 nav{
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    transition-property: width,height,background-color,border-radius;
+    transition-duration: 1s;
+    transition-delay: 1.5s,1.5s,3s,4s;
+}
+.containerp3:hover nav{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+/* pagina 4 */
+.containerp4{
+    background: #4EB967;
+    transition-property: width,height,background-color;
+    transition-duration: 1s;
+    transition-delay:0s,1s,2s;
+}
+.containerp4:hover,.containerp6:hover{
+    width: 300px;
+    height: 320px;
+}
+.containerp4:hover{
+    background-color: #7DE8FF;
+}
+.containerp4 nav{
+    width: 60px;
+    height: 60px;
+}
+.containerp4 nav{
+    background-color: blue;
+    transition-property:margin-left,margin-right,border-radius,background-color;
+    transition-duration: 1s;
+    transition-delay:2s,2s,3s,3s;
+}
+.containerp4:hover nav{
+    margin-left: 30px;
+}
+.containerp4:hover nav:first-child{
+    margin-left: 30px;
+    background-color: orange;
+}
+.containerp4:hover nav:last-child{
+    margin-right: 30px;
+    background-color: #3007B2;
+}
+/* pagina 5 */
+.containerp5{
+    background-color: orangered;
+    transition-property: background-color,width,height;
+    transition-duration: 1s;
+    transition-delay: 0s,1s,2s;
+    background-color: #344701;
+}
+.containerp5:hover{
+    width: 250px;
+    height: 270px;
+}
+.containerp5 nav{
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+}
+.containerp5 nav:last-child{
+    background-color: yellow;
+}
+.containerp5 nav:first-child,.containerp5 nav:last-child{
+    transition-property: margin-top,margin-right,margin-bottom,margin-left,border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s,3s,3s,3s,4s;
+}
+.containerp5:hover nav:nth-child(2){
+    background-color: blue;
+}
+.containerp5:hover nav:first-child{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.containerp5 nav:nth-child(2){
+    transition-property: border-radius,background-color;
+    transition-duration: 1s;
+    transition-delay: 5s,6s;
+}
+.containerp5:hover nav:last-child{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+/* pagina 6 */
+.containerp6{
+    background-color: rgb(67, 127, 247);
+    transition-property: width, height, border-top, border-right, border-bottom,border-left;
+    transition-duration: 1s;
+    transition-delay: 0s,0s,1s,2s,3s,4s;
+    box-sizing: border-box;
+}
+.containerp6:hover{
+    border-top: solid 4px blue;
+    border-left : solid 4px green;
+    border-bottom: solid 4px red;
+    border-right: solid 4px brown;
+}
+.containerp6 nav{
+    width:50px;
+    height: 50px;
+    background-color: brown;
+}
+.containerp6:hover nav:nth-child(1),.containerp6:hover nav:nth-child(2),.containerp6:hover nav:nth-child(3),.containerp6:hover nav:nth-child(4){
+    margin: 20px;
+}
+.containerp6:hover nav:last-child{
+    background-color: cyan;
+}
+.containerp6 nav:nth-child(1){
+    transition-property: margin, border-radius;
+    transition-duration: 1s;
+    transition-delay: 5s, 6s;
+}
+.containerp6 nav:nth-child(2){
+    transition-property: margin, border-radius;
+    transition-duration: 1s;
+    transition-delay: 7s, 8s;
+}
+.containerp6 nav:nth-child(3){
+    transition-property: margin, border-radius;
+    transition-duration: 1s;
+    transition-delay: 9s, 10s;
+}
+.containerp6 nav:nth-child(4){
+    transition-property: margin, border-radius;
+    transition-duration: 1s;
+    transition-delay: 11s, 12s;
+}
+.containerp6 nav:last-child{
+    transition-property: border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 13s, 14s;
+}
